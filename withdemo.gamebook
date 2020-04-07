@@ -1,0 +1,105 @@
+missingto = demoinfo
+
+* 1 start :base:
+
+La cicala ammalata
+
+ascolta attentamente
+
+vai [[quiz1][avanti]]
+
+
+* quiz1 :demo:
+
+DOVE SI TROVA LA CICALA?
+
+[[error1][SOTTO L’ULIVO]]
+[[error1][IN MONTAGNA]]
+[[quiz2][SOTTO L’ULIVO IN RIVA AL MARE]]
+
+* quiz2 :demo:
+CHE COSA FA LA CICALA?
+
+[[error2][SUONA IL VIOLINO]]
+[[quiz3][RACCONTA STORIE]]
+[[error2][PRENDE IL SOLE]]
+
+* quiz3 :demo:
+CHE COSA SUCCEDE UN GIORNO ALLA CICALA?
+
+[[quiz4][LA CICALA SI AMMALA]]
+[[error3][LA CICALA PERDE UN OCCHIO]]
+[[error3][LA CICALA SCAPPA VIA]]
+
+* quiz4 :demo:
+COME FA LA CICALA QUANDO HA LA TOSSE
+
+[[error4][ETCIÙ]]
+[[error4][OHI,OHI]]
+[[quiz5][COFF! COFF!]] 
+
+* quiz5 :demo:
+CHE COSA HA LA CICALA?
+
+[[error5][MAL DI GOLA MAL DI DENTI RAFFREDDORE]] 
+[[quiz6][MAL DI GOLA INFLUENZA RAFFREDDORE]] 
+[[error5][MAL DI GOLA RAFFREDDORE MAL DI PANCIA]]
+
+* quiz6 :demo:
+CHE COSA FA L’APE?
+
+[[quiz7][FA BERE UNA GOCCIA DI MIELE ALLA CICALA]]
+[[error6][LASCIA CADERE LA CICALA]]
+[[error6][STARNUTISCE]]
+
+* quiz7 :demo:
+QUALI ANIMALI COSTRUISCONO UN LETTO DI PETALI PER LA CICALA?
+
+[[error7][IL BRUCO]]
+[[error7][IL RAGNO]]
+[[quiz8][LE FORMICHE]]
+
+* quiz8 :demo:
+QUALE ANIMALE PORTA UNA FOGLIA DA USARE COME COPERTA?
+
+[[error8][LE FORMICHE]]
+[[quiz9][IL BRUCO]]
+[[error8][IL RAGNO]]
+
+* quiz9 :demo:
+QUALE ANIMALE TESSE UNA SCIARPA DI SETA?
+
+[[win][IL RAGNO]]
+[[error9][LE FORMICHE]]
+[[error9][IL BRUCO]]
+
+* error1
+Hai scelto male [[quiz1][indietro]]
+
+* error2
+Hai scelto male [[quiz2][indietro]]
+
+* error3
+Hai scelto male [[quiz3][indietro]]
+
+* error4
+Hai scelto male [[quiz4][indietro]]
+
+* error5
+Hai scelto male [[quiz5][indietro]]
+
+* error6
+Hai scelto male [[quiz6][indietro]]
+
+* error7
+Hai scelto male [[quiz7][indietro]]
+
+* error8
+Hai scelto male [[quiz8][indietro]]
+
+* error9
+Hai scelto male [[quiz9][indietro]]
+
+* win :demo:
+Hai vinto!!!
+
