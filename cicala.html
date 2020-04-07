@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Gamebook</title>
+    <script type="text/javascript" src="gamebookformatplay.js"></script>
+    <link rel="stylesheet" href="gamebookformat.css"
+          type="text/css" />
+    <script>
+      if (typeof gamebook !== 'undefined') {
+         gamebook.id = 'cicala';
+      }
+    </script>
+  </head>
+  <body>
+<div class="hideintrolink nodisplay"
+    onclick="gamebook.hideIntroSections()">(hide instructions)</div>
+  <div class="gamebook">
+<div class="resumelink nodisplay"
+  onclick="gamebook.loadGame()">Resume saved game.</div>
+
+<div class="startlink"
+  onclick="gamebook.turnTo(1)">Turn to 1 to begin.</div>
+<script>
+    if (typeof gamebook !== 'undefined' && gamebook.hasSavedGame()) {
+        var resumeLinks = document.getElementsByClassName('resumelink');
+        Array.prototype.forEach.call(resumeLinks, function(e) {
+            e.classList.remove('nodisplay');
+        });
+    }
+</script>
+<div class="section" id="section1">
+<div class="sectionnumber" id="para1">1</div>
+<div class="sectiontext">
+  La cicala ammalata  ascolta attentamente  
+  <audio preload="metadata" controls="controls">
+   <source src="media1.m4a" type="audio/x-m4a" controls autoplay>
+   <a href="media1.m4a">Download the music file (your browser doesn't support html5)</a>
+   </audio> <a class="sectionref enabledlink" data-ref="4"href="#section4">avanti</a>  
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(1, document.getElementById('section1'));
+}
+</script><div class="section" id="section2">
+<div class="sectionnumber" id="para2">2</div>
+<div class="sectiontext">
+ CHE COSA HA LA CICALA?  <a class="sectionref enabledlink" data-ref="7"
+href="#section7">MAL DI GOLA MAL DI DENTI RAFFREDDORE</a> <a class="sectionref enabledlink" data-ref="16"
+href="#section16">MAL DI GOLA INFLUENZA RAFFREDDORE</a> <a class="sectionref enabledlink" data-ref="7"
+href="#section7">MAL DI GOLA RAFFREDDORE MAL DI PANCIA</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(2, document.getElementById('section2'));
+}
+</script><div class="section" id="section3">
+<div class="sectionnumber" id="para3">3</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="8"
+href="#section8">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(3, document.getElementById('section3'));
+}
+</script><div class="section" id="section4">
+<div class="sectionnumber" id="para4">4</div>
+<div class="sectiontext">
+  DOVE SI TROVA LA CICALA?  <a class="sectionref enabledlink" data-ref="15"
+href="#section15">SOTTO L’ULIVO</a> <a class="sectionref enabledlink" data-ref="15"
+href="#section15">IN MONTAGNA</a> <a class="sectionref enabledlink" data-ref="17"
+href="#section17">SOTTO L’ULIVO IN RIVA AL MARE</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(4, document.getElementById('section4'));
+}
+</script><div class="section" id="section5">
+<div class="sectionnumber" id="para5">5</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="9"
+href="#section9">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(5, document.getElementById('section5'));
+}
+</script><div class="section" id="section6">
+<div class="sectionnumber" id="para6">6</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="14"
+href="#section14">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(6, document.getElementById('section6'));
+}
+</script><div class="section" id="section7">
+<div class="sectionnumber" id="para7">7</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="2"
+href="#section2">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(7, document.getElementById('section7'));
+}
+</script><div class="section" id="section8">
+<div class="sectionnumber" id="para8">8</div>
+<div class="sectiontext">
+ QUALE ANIMALE PORTA UNA FOGLIA DA USARE COME COPERTA?  <a class="sectionref enabledlink" data-ref="3"
+href="#section3">LE FORMICHE</a> <a class="sectionref enabledlink" data-ref="18"
+href="#section18">IL BRUCO</a> <a class="sectionref enabledlink" data-ref="3"
+href="#section3">IL RAGNO</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(8, document.getElementById('section8'));
+}
+</script><div class="section" id="section9">
+<div class="sectionnumber" id="para9">9</div>
+<div class="sectiontext">
+ CHE COSA SUCCEDE UN GIORNO ALLA CICALA?  <a class="sectionref enabledlink" data-ref="14"
+href="#section14">LA CICALA SI AMMALA</a> <a class="sectionref enabledlink" data-ref="5"
+href="#section5">LA CICALA PERDE UN OCCHIO</a> <a class="sectionref enabledlink" data-ref="5"
+href="#section5">LA CICALA SCAPPA VIA</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(9, document.getElementById('section9'));
+}
+</script><div class="section" id="section10">
+<div class="sectionnumber" id="para10">10</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="17"
+href="#section17">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(10, document.getElementById('section10'));
+}
+</script><div class="section" id="section11">
+<div class="sectionnumber" id="para11">11</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="13"
+href="#section13">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(11, document.getElementById('section11'));
+}
+</script><div class="section" id="section12">
+<div class="sectionnumber" id="para12">12</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="16"
+href="#section16">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(12, document.getElementById('section12'));
+}
+</script><div class="section" id="section13">
+<div class="sectionnumber" id="para13">13</div>
+<div class="sectiontext">
+ QUALI ANIMALI COSTRUISCONO UN LETTO DI PETALI PER LA CICALA?  <a class="sectionref enabledlink" data-ref="11"
+href="#section11">IL BRUCO</a> <a class="sectionref enabledlink" data-ref="11"
+href="#section11">IL RAGNO</a> <a class="sectionref enabledlink" data-ref="8"
+href="#section8">LE FORMICHE</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(13, document.getElementById('section13'));
+}
+</script><div class="section" id="section14">
+<div class="sectionnumber" id="para14">14</div>
+<div class="sectiontext">
+ COME FA LA CICALA QUANDO HA LA TOSSE  <a class="sectionref enabledlink" data-ref="6"
+href="#section6">ETCIÙ</a> <a class="sectionref enabledlink" data-ref="6"
+href="#section6">OHI,OHI</a> <a class="sectionref enabledlink" data-ref="2"
+href="#section2">COFF! COFF!</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(14, document.getElementById('section14'));
+}
+</script><div class="section" id="section15">
+<div class="sectionnumber" id="para15">15</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="4"
+href="#section4">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(15, document.getElementById('section15'));
+}
+</script><div class="section" id="section16">
+<div class="sectionnumber" id="para16">16</div>
+<div class="sectiontext">
+ CHE COSA FA L’APE?  <a class="sectionref enabledlink" data-ref="13"
+href="#section13">FA BERE UNA GOCCIA DI MIELE ALLA CICALA</a> <a class="sectionref enabledlink" data-ref="12"
+href="#section12">LASCIA CADERE LA CICALA</a> <a class="sectionref enabledlink" data-ref="12"
+href="#section12">STARNUTISCE</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(16, document.getElementById('section16'));
+}
+</script><div class="section" id="section17">
+<div class="sectionnumber" id="para17">17</div>
+<div class="sectiontext">
+ CHE COSA FA LA CICALA?  <a class="sectionref enabledlink" data-ref="10"
+href="#section10">SUONA IL VIOLINO</a> <a class="sectionref enabledlink" data-ref="9"
+href="#section9">RACCONTA STORIE</a> <a class="sectionref enabledlink" data-ref="10"
+href="#section10">PRENDE IL SOLE</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(17, document.getElementById('section17'));
+}
+</script><div class="section" id="section18">
+<div class="sectionnumber" id="para18">18</div>
+<div class="sectiontext">
+ QUALE ANIMALE TESSE UNA SCIARPA DI SETA?  <a class="sectionref enabledlink" data-ref="20"
+href="#section20">IL RAGNO</a> <a class="sectionref enabledlink" data-ref="19"
+href="#section19">LE FORMICHE</a> <a class="sectionref enabledlink" data-ref="19"
+href="#section19">IL BRUCO</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(18, document.getElementById('section18'));
+}
+</script><div class="section" id="section19">
+<div class="sectionnumber" id="para19">19</div>
+<div class="sectiontext">
+ Hai scelto male <a class="sectionref enabledlink" data-ref="18"
+href="#section18">indietro</a> 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(19, document.getElementById('section19'));
+}
+</script><div class="section" id="section20">
+<div class="sectionnumber" id="para20">20</div>
+<div class="sectiontext">
+ Hai vinto!!! 
+</div>
+</div>
+<script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.addSection(20, document.getElementById('section20'));
+}
+</script>    <div id="counters" class="counters">
+    </div>
+    <div id="counterTemplate" class="counterTemplate">
+      <span class="counterheading"></span>
+      <span class="countercontents"></span>
+    </div>
+    </div>
+    <div id="collections" class="collections">
+    </div>
+    <div id="collectionTemplate" class="collectionTemplate">
+      <span class="collectionheading"></span>
+      <span class="collectioncontents"></span>
+    </div>
+    </div>
+    <script>
+if (typeof gamebook !== 'undefined') {
+   gamebook.prepare();
+}
+    </script>
+
+  </body>
+</html>
